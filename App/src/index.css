@@ -1,0 +1,87 @@
+@import "flowbite";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*Home page moving box animation
+
+.moving-box{
+    height: 5vw;
+    width: 44%;
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+}
+.move-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveanime 11s linear infinite;
+}
+.move-container img{
+    height: 1vw;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 1.8vw;
+    filter: grayscale(100%) brightness(50%);
+}
+@keyframes moveanime{
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}*/
+.blur-left{
+    z-index: 99;
+    /* background: linear-gradient(to right,  #BAE6FD, transparent); */
+    background: linear-gradient(to right,  #edf7fc, transparent);
+    position: absolute;
+    left: 0;
+}
+.blur-right{
+    z-index: 99;
+    /* background: linear-gradient(to right, transparent, #FBCFE8); */
+    background: linear-gradient(to right, transparent, #edf7fc);
+    position: absolute;
+    right: 0%;
+}
+@keyframes moveanime{
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}
+.move{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveanime 11s linear infinite;
+}
+.move2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveanime 12s linear infinite;
+}
+.move img{
+    filter: grayscale(100%) brightness(0%);
+
+}
