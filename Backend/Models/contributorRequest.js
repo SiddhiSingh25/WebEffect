@@ -1,7 +1,9 @@
-let mongoose = require("mongoose");
+let user  = require("../Models/user")
+let mongoose = require("mongoose")
+const newContributorReqSchema = new mongoose.Schema({
+    contributorRequest: [{type : String }],
+    contributorRequest: [{type : mongoose.Schema.Types.ObjectId, ref : "user" }]
+});
 
-let mongooseSchema = new mongoose.Schema({
-    portfolio : {type : String}
-})
-
-module.exports = {mongooseSchema}
+const ContributorRequest = mongoose.model("ContributorReq", newContributorReqSchema);
+module.exports = ContributorRequest;

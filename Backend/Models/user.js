@@ -1,7 +1,6 @@
 let mongoose = require("mongoose")
 let bcrypt = require("bcrypt");
 let contributorRequest = require("./contributorRequest");
-[{type : mongoose.Schema.Types.ObjectId, ref : "Review"}]
 const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
