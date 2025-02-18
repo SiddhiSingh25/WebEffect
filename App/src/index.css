@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 /*Home page moving box animation
 
@@ -84,4 +89,13 @@
 .move img{
     filter: grayscale(100%) brightness(0%);
 
+}
+/*text-style-shadow*/
+.text-style-shadow{
+    text-shadow: 1px 0rem .3rem rgba(44, 44, 44, 0.4);
+}
+
+/*linear-bg*/
+.linear-bg{
+    background: linear-gradient(90deg, #00c4cc, #8b3dff, #7731d8, #612dae);
 }

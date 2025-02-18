@@ -5,7 +5,8 @@ const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
-    contributorRequest: [{type : mongoose.Schema.Types.ObjectId, ref : "contributorRequest" }]
+    role : {type : String , enum : ["user",  "contributor", "admin"], default : "user"},
+    request : {type : Boolean , default : false}
 });
 
 userSchema.pre("save", async function (next) {

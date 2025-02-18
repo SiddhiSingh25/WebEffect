@@ -6,7 +6,7 @@ export function Hero() {
             <div className='flex items-center justify-center mb-2'>
                 <div className='px-7 w-auto py-2 rounded-lg h-auto border-[0.01rem] border-solid border-gray-200 shadow-sm'>Created by
                     <span className="inline-block font-semibold dark:text-white ml-1 mr-1">
-                       web effects
+                        web effects
                     </span>
                     Team</div>
             </div>
@@ -28,7 +28,7 @@ export function Hero() {
             <p className="text-gray-500 mb-8">
                 Posted in Design | Published on 1 December, 2024 | By Siddhi Singh
             </p>
-            <input hiii ia m 
+            <input hiii ia m
                 type="text"
                 placeholder="Search"
                 className="border border-gray-300 rounded px-4 py-2 w-1/2"
@@ -41,24 +41,23 @@ export function Hero() {
                 <div className="absolute animate-pulse bg-gradient-to-br from-sky-200 ml-4 to-sky-300  w-20 h-20 rounded-full blur-md right-3 top-[-1rem]"></div>
             </div>
             <div className='flex items-center justify-center w-full'>
-            <div className="moving-box h-12 whitespace-nowrap overflow-hidden w-[65%] mt-5 flex relative gap-5">
-                <div className="blur-left h-[100%] w-[30%]"></div>
-                <div className="move flex items-center gap-5 w-[100%] justify-between ml-5">
-                    <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="" className='h-6 object-contain object-center'/>
+                <div className="moving-box h-12 whitespace-nowrap overflow-hidden w-[65%] mt-5 flex relative gap-5">
+                    <div className="blur-left h-[100%] w-[30%]"></div>
+                    <div className="move flex items-center gap-5 w-[100%] justify-between ml-5">
+                        <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="" className='h-6 object-contain object-center' />
+                    </div>
+                    <div className="move flex items-center gap-5 w-[100%] justify-between move">
+                        <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="" className='h-6 object-contain object-center' />
+                        <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="" className='h-6 object-contain object-center' />
+                    </div>
+                    <div className="blur-right h-[100%] w-[30%]"></div>
                 </div>
-                <div className="move flex items-center gap-5 w-[100%] justify-between move">
-                    <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="" className='h-6 object-contain object-center'/>
-                    <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="" className='h-6 object-contain object-center'/>
-                </div>
-                <div className="blur-right h-[100%] w-[30%]"></div>
             </div>
-            </div>
-           
         </header>
     </>)
 }

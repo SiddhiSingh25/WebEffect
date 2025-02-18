@@ -1,4 +1,3 @@
-
 import {
     Avatar,
     Dropdown,
@@ -8,56 +7,162 @@ import {
     Navbar,
     NavbarBrand,
     NavbarCollapse,
-    NavbarLink,
     NavbarToggle,
 } from "flowbite-react";
+import { NavLink } from "react-router-dom";
 
-export function Component() {
+const NavbarComponent = () => {
     return (
-        <Navbar fluid rounded>
-            <NavbarBrand href="https://flowbite-react.com">
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                    &lt;web effects/&gt;
-                </span>
+        <>
+            <Navbar fluid rounded className="px-24 py-6">
+                <NavbarBrand>
+                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                        &lt;web effects/&gt;
+                    </span>
+                </NavbarBrand>
+                <div className="hidden md:flex gap-8 list-none font-semibold text-gray-800">
+                    {/* Replace href with NavLink */}
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/services"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Services
+                    </NavLink>
+                    <NavLink
+                        to="/pricing"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Pricing
+                    </NavLink>
+                    <NavLink
+                        to="/become-contributor"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Become a Contributor
+                    </NavLink>
+                </div>
 
-            </NavbarBrand>
-            <div className="hidden md:flex gap-8 list-none font-semibold text-gray-800">
-                <NavbarLink href="#">Home</NavbarLink>
-                <NavbarLink href="#">About</NavbarLink>
-                <NavbarLink href="#">Services</NavbarLink>
-                <NavbarLink href="#">Pricing</NavbarLink>
-                <NavbarLink href="#">Contact</NavbarLink>
-            </div>
-
-            <div className="flex md:order-2">
-                <Dropdown
-                    arrowIcon={false}
-                    inline
-                    label={
-                        <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
-                    }
-                >
-                    <DropdownHeader>
-                        <span className="block text-sm">Bonnie Green</span>
-                        <span className="block truncate text-sm font-medium">name@flowbite.com</span>
-                    </DropdownHeader>
-                    <DropdownItem>Dashboard</DropdownItem>
-                    <DropdownItem>Settings</DropdownItem>
-                    <DropdownItem>Earnings</DropdownItem>
-                    <DropdownDivider />
-                    <DropdownItem>Sign out</DropdownItem>
-                </Dropdown>
-                <NavbarToggle />
-            </div>
-            <NavbarCollapse>
-                <NavbarLink href="#" >
-                    Home
-                </NavbarLink>
-                <NavbarLink href="#">About</NavbarLink>
-                <NavbarLink href="#">Services</NavbarLink>
-                <NavbarLink href="#">Pricing</NavbarLink>
-                <NavbarLink href="#">Contact</NavbarLink>
-            </NavbarCollapse>
-        </Navbar>
+                <div className="flex md:order-2">
+                    <Dropdown
+                        arrowIcon={false}
+                        inline
+                        label={
+                            <Avatar
+                                alt="User settings"
+                                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                rounded
+                            />
+                        }
+                    >
+                        <DropdownHeader>
+                            <span className="block text-sm">Bonnie Green</span>
+                            <span className="block truncate text-sm font-medium">
+                                name@flowbite.com
+                            </span>
+                        </DropdownHeader>
+                        <DropdownItem>Dashboard</DropdownItem>
+                        <DropdownItem>
+                            <div>
+                                <NavLink
+                                    to="/user-register"
+                                >
+                                    Register
+                                </NavLink>
+                            </div>
+                        </DropdownItem>
+                        <DropdownItem>Earnings</DropdownItem>
+                        <DropdownDivider />
+                        <DropdownItem>Sign out</DropdownItem>
+                    </Dropdown>
+                    <NavbarToggle />
+                </div>
+                <NavbarCollapse>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/services"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Services
+                    </NavLink>
+                    <NavLink
+                        to="/pricing"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Pricing
+                    </NavLink>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "text-blue-500"
+                                : "text-gray-800 hover:text-blue-500"
+                        }
+                    >
+                        Contact
+                    </NavLink>
+                </NavbarCollapse>
+            </Navbar>
+        </>
     );
-}
+};
+
+export default NavbarComponent;
