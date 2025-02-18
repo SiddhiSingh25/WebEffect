@@ -3,11 +3,11 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
 const Register = () => {
-    const [username, setUsername] = useState("");
+    // const [username, setUsername] = useState("");
 
-    const submitControl = ()=>{
+    // const submitControl = ()=>{
 
-    }
+    // }
     return (
         <div className='h-auto w-full mt-20 flex items-center justify-center'>
             <form  method='post' className='h-[28rem] w-[32vw] full rounded-3xl border-2 border-[#8b3dff] border-solid p-10 flex items-center justify-between flex-col relative'>
@@ -20,7 +20,6 @@ const Register = () => {
                             autoComplete="new-password" 
                             className=" p-0 bg-transparent h-full w-full outline-none focus:outline-none focus:ring-0 border border-transparent focus:border-transparent hover:border-transparent placeholder:text-gray-500 text-gray-800"
                             placeholder="Username"
-                            onChange={()=>}
                         />
                         <FaUserAlt className='w-5 h-5 text-gray-500' />
                     </div>
